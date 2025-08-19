@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Портфоліо розробника та дизайнера">
+    <meta name="keywords" content="портфоліо, веб-розробка, дизайн, мобільні додатки">
+    <meta name="author" content="Ваше Ім'я">
+    <title>Моє Портфоліо</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.15/Babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        const { useState } = React;
+
+        const App = () => {
+            return (
+                <div className="min-h-screen bg-gray-100">
+                    {/* Навігація */}
+                    <nav className="fixed top-0 w-full bg-gray-900 text-white z-50">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center">
+                            <h1 className="text-2xl font-bold">Моє Портфоліо</h1>
+                            <div className="mt-2 sm:mt-0 space-x-4">
+                                <a href="#home" className="hover:text-gray-300">Головна</a>
+                                <a href="#categories" className="hover:text-gray-300">Категорії</a>
+                                <a href="#contact" className="hover:text-gray-300">Контакти</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    {/* Герой */}
+                    <section id="home" className="h-screen flex flex-col items-center justify-center bg-gray-200">
+                        <h1 className="text-4xl sm:text-5xl font-bold text-gray-800">Ваше Ім'я</h1>
+                        <p className="text-lg text-gray-600">Розробник та дизайнер</p>
+                        <div className="mt-4 text-gray-800 text-center">
+                            <p>Телефон: +380 123 456 789</p>
+                            <p>Email: example@email.com</p>
+                            <div className="flex justify-center space-x-4 mt-2">
+                                <a href="https://facebook.com" className="hover:text-gray-400">Facebook</a>
+                                <a href="https://linkedin.com" className="hover:text-gray-400">LinkedIn</a>
+                                <a href="https://github.com" className="hover:text-gray-400">GitHub</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Категорії */}
+                    <section id="categories" className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-3xl font-bold text-center mb-8">Мої Роботи</h2>
+                        <p className="text-center text-gray-600">Зображення та категорії будуть додані незабаром!</p>
+                    </section>
+
+                    {/* Контакти */}
+                    <section id="contact" className="py-16 bg-gray-900 text-white">
+                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                            <h2 className="text-3xl font-bold mb-8">Зв'яжіться зі мною</h2>
+                            <p>Телефон: +380 123 456 789</p>
+                            <p>Email: example@email.com</p>
+                            <div className="flex justify-center space-x-4 mt-4">
+                                <a href="https://facebook.com" className="hover:text-gray-300">Facebook</a>
+                                <a href="https://linkedin.com" className="hover:text-gray-300">LinkedIn</a>
+                                <a href="https://github.com" className="hover:text-gray-300">GitHub</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
