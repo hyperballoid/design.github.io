@@ -1,204 +1,148 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0031)https://hyperballoid.github.io/ -->
+<html lang="uk"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Портфоліо розробника та дизайнера">
-    <meta name="keywords" content="портфоліо, веб-розробка, дизайн, мобільні додатки">
-    <meta name="author" content="Ваше Ім'я">
-    <title>Моє Портфоліо</title>
-    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.15/Babel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/framer-motion@11.2.10/dist/framer-motion.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Портфоліо Кибальник Сергій - Художник</title>
+    <link rel="stylesheet" href="./Портфоліо Кибальник Сергій - Художник_files/styles.css">
+    <link href="./Портфоліо Кибальник Сергій - Художник_files/css2" rel="stylesheet">
+    <!-- Іконки Font Awesome для соцмереж -->
+    <link rel="stylesheet" href="./Портфоліо Кибальник Сергій - Художник_files/all.min.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/babel">
-        const { useState } = React;
-        const { motion } = window.FramerMotion;
+    <!-- Шапка з фото -->
+    <header>
+        <img src="./Портфоліо Кибальник Сергій - Художник_files/author.jpg" alt="Фото автора" class="author-photo">
+        <h1>Кибальник Сергій</h1>
+        <h2> тел.: +38(063) 350 93 62</h2>
+        <p>Художник: традиційні техніки та цифрова графіка</p>
+        <nav>
+            <a href="https://hyperballoid.github.io/#acrylic-watercolor">Акрил, олія, акварель</a>
+            <a href="https://hyperballoid.github.io/#pencil">Графічний олівець</a>
+            <a href="https://hyperballoid.github.io/#digital">Комп’ютерна графіка</a>
+        </nav>
+    </header>
 
-        // Дані для портфоліо (можна розширювати)
-        const categories = [
-            {
-                id: 'web',
-                title: 'Веб-розробка',
-                image: 'assets/web.jpg',
-                projects: [
-                    { id: 1, title: 'Веб-проєкт 1', image: 'assets/project1.jpg', description: 'Сучасний веб-додаток із використанням React та Tailwind CSS.' },
-                    { id: 2, title: 'Веб-проєкт 2', image: 'assets/project2.jpg', description: 'Інтерактивний сайт для онлайн-магазину.' },
-                ],
-            },
-            {
-                id: 'design',
-                title: 'Дизайн',
-                image: 'assets/design.jpg',
-                projects: [
-                    { id: 1, title: 'Дизайн 1', image: 'assets/design1.jpg', description: 'UI/UX дизайн для мобільного додатку.' },
-                    { id: 2, title: 'Дизайн 2', image: 'assets/design2.jpg', description: 'Брендинг для стартапу.' },
-                ],
-            },
-            {
-                id: 'mobile',
-                title: 'Мобільні додатки',
-                image: 'assets/mobile.jpg',
-                projects: [
-                    { id: 1, title: 'Мобільний додаток 1', image: 'assets/mobile1.jpg', description: 'Додаток для планування завдань.' },
-                    { id: 2, title: 'Мобільний додаток 2', image: 'assets/mobile2.jpg', description: 'Фітнес-додаток із трекером активності.' },
-                ],
-            },
-        ];
+    <!-- Про мене -->
+    <section class="about">
+        <h2>Про мене</h2>
+        <p>Я художник, що працює з акрилом, олією, аквареллю, графічним олівцем та комп’ютерною графікою. Мої роботи — це поєднання традицій і сучасних технологій.</p>
+    </section>
 
-        const App = () => {
-            const [selectedCategory, setSelectedCategory] = useState(null);
+    <!-- Розділ 1: Акрил, олія, акварель -->
+    <section id="acrylic-watercolor" class="gallery">
+        <h2>Акрил, олія, акварель</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/0001.jpg" alt="Олійний пейзаж">
+                <h3>Українка</h3>
+                <p>Олія, полотно</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/0002.jpg" alt="Акварельний портрет">
+                <h3>Жінка</h3>
+                <p>Акрил, полотно</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/0003.jpg" alt="Акрилові квіти">
+                <h3>Жінка</h3>
+                <p>Акрил, полотно</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/204.jpg" alt="Морський пейзаж">
+                <h3>Посейдон</h3>
+                <p>Акварель, папір А3</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/203.jpg" alt="Птах аквареллю">
+                <h3>Пленер</h3>
+                <p>Акварель, папір А4</p>
+            </div>
+        </div>
+    </section>
 
-            return (
-                <div className="min-h-screen bg-gray-100">
-                    {/* Навігація */}
-                    <motion.nav
-                        initial={{ y: -50 }}
-                        animate={{ y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        className="fixed top-0 w-full bg-gray-900 text-white z-50"
-                    >
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center">
-                            <h1 className="text-2xl font-bold">Моє Портфоліо</h1>
-                            <div className="mt-2 sm:mt-0 space-x-4">
-                                <a href="#home" className="hover:text-gray-300">Головна</a>
-                                <a href="#categories" className="hover:text-gray-300">Категорії</a>
-                                <a href="#contact" className="hover:text-gray-300">Контакти</a>
-                            </div>
-                        </div>
-                    </motion.nav>
+    <!-- Розділ 2: Графічний олівець -->
+    <section id="pencil" class="gallery">
+        <h2>Графічний олівець</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/013.jpg" alt="Ескіз портрета">
+                <h3>Портрет</h3>
+                <p>Олівець, папір А3</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/018.jpg" alt="Натурниця">
+                <h3>Портрет</h3>
+                <p>Олівець, папір А3</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/019.jpg" alt="Натурниця">
+                <h3>Натурниця, що сидить спиною</h3>
+                <p>Олівець, папір А4</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/010.jpg" alt="Натурниця ню">
+                <h3>Оголена</h3>
+                <p>Олівець, папір А4</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/012.jpg" alt="Темна ельфійка">
+                <h3>Темна ельфійка</h3>
+                <p>Олівець, папір А3</p>
+            </div>
+        </div>
+    </section>
 
-                    {/* Герой */}
-                    <motion.section
-                        id="home"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
-                        className="h-screen flex flex-col items-center justify-center bg-cover bg-center"
-                        style={{ backgroundImage: "url('assets/hero-bg.jpg')" }}
-                    >
-                        <img
-                            src="assets/author.jpg"
-                            alt="Фото автора"
-                            className="w-32 h-32 rounded-full mb-4 object-cover"
-                        />
-                        <h1 className="text-4xl sm:text-5xl font-bold text-white">Ваше Ім'я</h1>
-                        <p className="text-lg text-white">Розробник та дизайнер</p>
-                        <div className="mt-4 text-white text-center">
-                            <p>Телефон: +380 123 456 789</p>
-                            <p>Email: example@email.com</p>
-                            <div className="flex justify-center space-x-4 mt-2">
-                                <a href="https://facebook.com" className="hover:text-gray-300">Facebook</a>
-                                <a href="https://linkedin.com" className="hover:text-gray-300">LinkedIn</a>
-                                <a href="https://github.com" className="hover:text-gray-300">GitHub</a>
-                            </div>
-                        </div>
-                    </motion.section>
+    <!-- Розділ 3: Комп’ютерна графіка -->
+    <section id="digital" class="gallery">
+        <h2>Комп’ютерна графіка</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/301.jpg" alt="Будиночки Фей">
+                <h3>Казкові будиночки</h3>
+                <p>Векторна графіка</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/303.jpg" alt="Мати">
+                <h3>Мати</h3>
+                <p>Векторна графіка</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/305.jpg" alt="Герб міста">
+                <h3>Герб і прапор  міста</h3>
+                <p>Векторна графіка</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/134.jpg" alt="Ілюстрація">
+                <h3>Ілюстрація</h3>
+                <p>Procreate</p>
+            </div>
+            <div class="project">
+                <img src="./Портфоліо Кибальник Сергій - Художник_files/306.jpg" alt="Ескіз">
+                <h3>Ескіз</h3>
+                <p>Олівець у вектор</p>
+            </div>
+        </div>
+    </section>
 
-                    {/* Категорії */}
-                    <section id="categories" className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-3xl font-bold text-center mb-8">Мої Роботи</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {categories.map((category) => (
-                                <motion.div
-                                    key={category.id}
-                                    initial={{ scale: 0.9, opacity: 0 }}
-                                    whileInView={{ scale: 1, opacity: 1 }}
-                                    transition={{ duration: 0.5 }}
-                                    className="bg-white rounded-lg shadow-lg overflow-hidden"
-                                >
-                                    <img
-                                        src={category.image}
-                                        alt={category.title}
-                                        className="w-full h-48 object-cover"
-                                        loading="lazy"
-                                    />
-                                    <div className="p-4">
-                                        <h3 className="text-xl font-semibold">{category.title}</h3>
-                                        <button
-                                            onClick={() => setSelectedCategory(category)}
-                                            className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                                        >
-                                            Бачити більше
-                                        </button>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-                    </section>
+    <!-- Посилання на відео -->
+    <section class="video-link">
+        <h2>Мої анімації</h2>
+        <p>Перегляньте приклад моєї роботи з ШІ: <a href="https://hyperballoid.github.io/assets/digital/101.mp4">Підводна анімація</a></p>
+    </section>
 
-                    {/* Детальна галерея категорії */}
-                    {selectedCategory && (
-                        <motion.section
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5 }}
-                            className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50"
-                        >
-                            <h2 className="text-3xl font-bold text-center mb-8">{selectedCategory.title}</h2>
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                                {selectedCategory.projects.map((project) => (
-                                    <motion.div
-                                        key={project.id}
-                                        initial={{ scale: 0.9, opacity: 0 }}
-                                        whileInView={{ scale: 1, opacity: 1 }}
-                                        transition={{ duration: 0.5 }}
-                                        className="bg-white rounded-lg shadow-lg overflow-hidden"
-                                    >
-                                        <img
-                                            src={project.image}
-                                            alt={project.title}
-                                            className="w-full h-48 object-cover"
-                                            loading="lazy"
-                                        />
-                                        <div className="p-4">
-                                            <h3 className="text-xl font-semibold">{project.title}</h3>
-                                            <p className="text-gray-600">{project.description}</p>
-                                        </div>
-                                    </motion.div>
-                                ))}
-                            </div>
-                            <div className="mt-8 text-center">
-                                <h3 className="text-xl font-semibold">Інші категорії</h3>
-                                <div className="flex justify-center space-x-4 mt-4">
-                                    {categories
-                                        .filter((cat) => cat.id !== selectedCategory.id)
-                                        .map((cat) => (
-                                            <button
-                                                key={cat.id}
-                                                onClick={() => setSelectedCategory(cat)}
-                                                className="text-blue-500 hover:underline"
-                                            >
-                                                {cat.title}
-                                            </button>
-                                        ))}
-                                </div>
-                            </div>
-                        </motion.section>
-                    )}
+    <!-- Футер із контактами -->
+    <footer>
+        <p>Зв’яжіться зі мною:</p>
+        <p>Email: <a href="mailto:hyperballoid@ukr.net">hyperballoid@ukr.net</a></p>
+        <p>Телефон: <a href="tel:+380633509362">+38 063 350 93 62</a></p>
+        <div class="social-icons">
+            <a href="https://facebook.com/hyperballoid" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/hyperballoid" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/+380633509362" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://tiktok.com/@hyperballoid_" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
 
-                    {/* Контакти */}
-                    <section id="contact" className="py-16 bg-gray-900 text-white">
-                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                            <h2 className="text-3xl font-bold mb-8">Зв'яжіться зі мною</h2>
-                            <p>Телефон: +380 123 456 789</p>
-                            <p>Email: example@email.com</p>
-                            <div className="flex justify-center space-x-4 mt-4">
-                                <a href="https://facebook.com" className="hover:text-gray-300">Facebook</a>
-                                <a href="https://linkedin.com" className="hover:text-gray-300">LinkedIn</a>
-                                <a href="https://github.com" className="hover:text-gray-300">GitHub</a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            );
-        };
 
-        ReactDOM.render(<App />, document.getElementById('root'));
-    </script>
-</body>
-</html>
+</body></html>
